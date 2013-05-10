@@ -1,5 +1,30 @@
 @charset "utf-8";
 
+.contact {
+  font-size: 16px;
+  padding: 0 0 3em 0;
+  /*border-top: 1px solid #ccc;*/
+}
+.contact p {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.row {
+border-top: 1px solid #ccc;
+width: 960px;
+margin: 0 auto;
+}
+.service {
+  width: 45%;
+  float: left;
+  text-align: left;
+  padding: 0 5% 5% 0;
+}
+.service h2 {
+  font-size: 16px
+}
+
 body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
@@ -12,8 +37,7 @@ h1 {
   letter-spacing: -1px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
+  padding: 50px 0 10px;
   margin: 0; }
 
 .doc {
