@@ -1,4 +1,15 @@
 header#header-page
   #header-page-inner.container
+
     .logo-page
-      a href="#" Patricia Somera
+      == link_to '#' do
+        hgroup
+          h1 Patricia Somera
+          h2 Enfermeira Particular
+
+    nav.nav-page
+      ul
+        li
+          == link_to 'Serviços', '#servicos'
+        li
+          == link_to 'Contato', '#contato'

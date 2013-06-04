@@ -2,49 +2,55 @@
 title: Patricia Somera - Enfermeira Particular Brasília - DF
 ---
 
-.container
-  .welcome
-    h1 Patricia Somera - Enfermeira Particular
-    == image_tag('/images/patricia-somera.png', width: 851, height: 234)
+section.intro
+  .container
+    .photo
+      == image_tag('/images/patricia-somera.jpg', width: 150, height: 150)
+    .description
+      p Proporciono aos meus pacientes soluções para as suas necessidades de saúde em seus domicílios. 
+      p Meu objetivo é cuidar com qualidade oferecendo conforto, dignidade e uma experiência gratificante. 
+      p Quero que através do meu trabalho, meu conhecimento e do meu acompanhamento as pessoas vivam melhor. 
+      p Escolhi ser Enfermeira porque amo e respeito a vida.
 
-  / .row
-  /   p Proporciono aos meus pacientes soluções para as suas necessidades de saúde em seus domicílios. 
-  /   p Meu objetivo é cuidar com qualidade oferecendo conforto, dignidade e uma experiência gratificante. 
-  /   p Quero que através do meu trabalho, meu conhecimento e do meu acompanhamento as pessoas vivam melhor. 
-  /   p Escolhi ser Enfermeira porque amo e respeito a vida.
 
-  div style="clear: both;"
+#servicos
+  .container
+    .welcome
+      == image_tag('/images/patricia-somera.png', width: 851, height: 234)
 
-  .row
-    header
-      h1 Serviços Oferecidos
-    .service
-      h2 Atendimento à Domicílio
-      ul
-        li Fazer visita de enfermagem ao paciente em sua residência para avaliar suas necessidades de saúde e realizar cuidados para a sua reabilitação.
+    div style="clear: both;"
 
-    .service
-      h2 Realização de Curativos
-      ul
-        li Avaliar as necessidades de curativo em feridas que o paciente apresenta e realizar o procedimento de troca deste com meta na cura.
-        li Feridas cirúrgicas
-        li Feridas limpas ou infectadas
-        li Feridas de pé diabético
+    .row
+      header
+        h1 Serviços Oferecidos
+      .service
+        h2 Atendimento à Domicílio
+        ul
+          li Fazer visita de enfermagem ao paciente em sua residência para avaliar suas necessidades de saúde e realizar cuidados para a sua reabilitação.
 
-    .service
-      h2 Orientações e acompanhamento pós-operatório
-      ul
-        li Avaliar e decidir sobre as melhores opções de tratamento no período de pós-operatório que o paciente se apresenta. 
-        li Avaliação da ferida cirúrgica, orientações sobre como proceder em momentos de dor, sobre melhor posicionamento no leito, na cadeira, durante o banho. Orientações como aliviar sintomas que ocorrem neste período. 
+      .service
+        h2 Realização de Curativos
+        ul
+          li Avaliar as necessidades de curativo em feridas que o paciente apresenta e realizar o procedimento de troca deste com meta na cura.
+          li Feridas cirúrgicas
+          li Feridas limpas ou infectadas
+          li Feridas de pé diabético
 
-    .service
-      h2 Orientações e acompanhamento pós-parto e amamentação
-      ul
-        li Avaliar a mulher como um todo no período de pós-parto. Suas necessidades, suas queixas e sintomas que ocorrem neste período. Dar orientações e ajudar no processo de amamentação para que bebê e mãe possam ter a melhor experiência possível.   
+      .service
+        h2 Orientações e acompanhamento pós-operatório
+        ul
+          li Avaliar e decidir sobre as melhores opções de tratamento no período de pós-operatório que o paciente se apresenta. 
+          li Avaliação da ferida cirúrgica, orientações sobre como proceder em momentos de dor, sobre melhor posicionamento no leito, na cadeira, durante o banho. Orientações como aliviar sintomas que ocorrem neste período. 
 
-  div style="clear: both;"
+      .service
+        h2 Orientações e acompanhamento pós-parto e amamentação
+        ul
+          li Avaliar a mulher como um todo no período de pós-parto. Suas necessidades, suas queixas e sintomas que ocorrem neste período. Dar orientações e ajudar no processo de amamentação para que bebê e mãe possam ter a melhor experiência possível.   
 
-  .contact
+div style="clear: both;"
+
+#contato.contact
+  .container
     header
       h1 Contato
     .contact
