@@ -56,4 +56,19 @@ section.intro
       h2 Patricia Somera
       ul
         p Telefone: (61) 8169-7459
-        p <a href="mailto:patricia.somera@gmail.com">Enviar email</a>
+        p <a href='mailto:patricia.somera@gmail.com'>Enviar email</a>
+
+
+
+div(itemscope itemtype='http://schema.org/Person')
+  span itemprop='name' Patricia Somera
+  == image_tag('patricia-somera.jpg', width: 150, height: 150, itemprop: 'image')
+
+  span itemprop='jobTitle' Enfermeira Particular
+  div(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+    span itemprop='addressLocality' Brasília
+    |, 
+    span itemprop='addressRegion' DF
+  span itemprop='telephone' (61) 8169-7459
+  == mail_to 'patricia.somera@gmail.com', 'patricia.somera@gmail.com', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email'
+  ==link_to 'http://www.patriciasomera.com.br', 'http://www.patriciasomera.com.br', itemprop: 'url'
