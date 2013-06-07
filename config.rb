@@ -72,8 +72,6 @@ configure :build do
   set :slim, format: :html5
   set :slim, pretty: false
 
-  Sass::Plugin.options[:style] = :compressed
-
   # Activate gzip
   activate :gzip
 
