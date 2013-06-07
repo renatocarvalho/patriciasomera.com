@@ -1,4 +1,16 @@
-require 'slim'
+require 'rubygems'
+require 'middleman'
+
+
+# Slim HTML
+########################################################
+require "slim"
+Slim::Engine.set_default_options format: :html5
+Slim::Engine.set_default_options pretty: true
+Slim::Engine.set_default_options tabsize: 2
+Slim::Engine.set_default_options escape_quoted_attrs: true
+
+
 ###
 # Compass
 ###
@@ -55,6 +67,9 @@ set :fonts_dir, 'assets/fonts'
 
 # Build-specific configuration
 configure :build do
+
+  Slim::Engine.set_default_options format: :html5
+
   # Activate gzip
   activate :gzip
 
