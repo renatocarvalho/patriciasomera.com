@@ -4,6 +4,11 @@ html lang='pt-br'
     meta charset='utf-8'
     meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'
     title == data.page.title || 'Patricia Somera - Enfermeira Particular Brasília - DF'
+    - if data.page.description?
+      meta name='description' content='#{{data.page.description}}'
+    - else
+      meta name='description' content='Meu nome é Patricia e meu propósito profissional é oferecer soluções de saúde ao meu paciente em seu domicílio. Quero que através do meu trabalho as pessoas vivam melhor.'
+    des
     == favicon_tag 'favicon.png'
     javascript:
       WebFontConfig = {
