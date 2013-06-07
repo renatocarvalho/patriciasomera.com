@@ -11,7 +11,8 @@ set :slim, pretty: true
 set :slim, tabsize: 2
 set :slim, escape_quoted_attrs: true
 
-Sass::Plugin.options[:style] = :compressed
+require "sass"
+set :sass, style: :compressed
 
 ###
 # Compass
