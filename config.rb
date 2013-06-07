@@ -72,6 +72,7 @@ configure :build do
   set :slim, format: :html5
   set :slim, pretty: false
 
+  set :sass, style: :compressed
 
   # Activate gzip
   activate :gzip
