@@ -5,10 +5,11 @@ require 'middleman'
 # Slim HTML
 ########################################################
 require "slim"
-Slim::Engine.set_default_options format: :html5
-Slim::Engine.set_default_options pretty: true
-Slim::Engine.set_default_options tabsize: 2
-Slim::Engine.set_default_options escape_quoted_attrs: true
+set :slim, layout_engine: :slim
+set :slim, format: :html5
+set :slim, pretty: true
+set :slim, tabsize: 2
+set :slim, escape_quoted_attrs: true
 
 
 ###
@@ -68,8 +69,9 @@ set :fonts_dir, 'assets/fonts'
 # Build-specific configuration
 configure :build do
 
-  Slim::Engine.set_default_options format: :html5
-  Slim::Engine.set_default_options pretty: false
+  set :slim, format: :html5
+  set :slim, pretty: false
+
 
   # Activate gzip
   activate :gzip
