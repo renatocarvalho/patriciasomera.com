@@ -1,5 +1,12 @@
 @charset "utf-8"
 
+// Font weights
+$extralight: 200 !default
+$light: 300 !default
+$regular: 400 !default
+$semibold: 500 !default
+$bold: 700 !default
+$extrabold: 900 !default
 $green: #27beb7
 
 @import normalize
@@ -22,7 +29,7 @@ a
   background-color: $green
   padding: em(60) 0
   hgroup
-    @include retina-image(/images/logo, 47px 60px)
+    @include retina-image("/images/logo", 47px 60px)
     background-repeat: no-repeat
     padding-left: 60px
   h1, h2
@@ -31,7 +38,7 @@ a
     margin: 0
     padding: 0
   h2
-    font-weight: 400
+    font-weight: $semibold
   a
     h1, h2
       color: rgba(white,.9)
@@ -48,6 +55,7 @@ a
     padding: 0
     list-style-type: none
     float: right
+    font-weight: $bold
     a
       color: white
     li
@@ -60,11 +68,13 @@ a
 .intro
   padding: 30px 0
   background-color: #f7f7f7
-  font-weight: 600
+  font-weight: $regular
   font-size: 16px
   color: #777
+  text-shadow: 0 1px 0 rgba(white,.4)
   .photo
-    +span-columns(2 of 12)
+    +span-columns(3 of 12)
+    text-align: right
     img
       border-radius: 999em
   .description
@@ -83,7 +93,7 @@ a
   margin-top: 30px
   padding: 30px 0
   background-color: #f7f7f7
-  font-weight: 600
+  font-weight: $bold
   font-size: 16px
   color: #777
   ul
