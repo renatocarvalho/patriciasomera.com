@@ -69,6 +69,7 @@ set :fonts_dir, 'assets/fonts'
 configure :build do
 
   Slim::Engine.set_default_options format: :html5
+  Slim::Engine.set_default_options pretty: false
 
   # Activate gzip
   activate :gzip
