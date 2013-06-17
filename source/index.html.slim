@@ -59,24 +59,25 @@ section.intro
 #contato.contact
   .container
     header
-      h1 Contato
+      h1 Entre em contato:
     .contact
-      h2 Patricia Somera
-      ul
-        p Telefone: (61) 8169-7459
-        p <a href='mailto:patricia.somera@gmail.com'>Enviar email</a>
+      div(itemscope itemtype='http://schema.org/Person')
+        span.name itemprop='name' Patricia Somera
+        == image_tag('patricia-somera.jpg', width: 150, height: 150, itemprop: 'image', class: 'hidden')
+
+        span.hidden itemprop='jobTitle' Enfermeira Particular
+        div.address(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+          span itemprop='addressLocality' Brasília
+          |, 
+          span itemprop='addressRegion' DF
+        span.phone itemprop='telephone' (61) 8169-7459
+        == mail_to 'patricia.somera@gmail.com', 'Enviar email', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email', class: 'email'
+        ==link_to 'http://www.patriciasomera.com.br', 'http://www.patriciasomera.com.br', itemprop: 'url', class: 'hidden'
+
+      / h2 Patricia Somera
+      / ul
+      /   p Telefone: (61) 8169-7459
+      /   p <a href='mailto:patricia.somera@gmail.com'>Enviar email</a>
 
 
 
-div(itemscope itemtype='http://schema.org/Person')
-  span itemprop='name' Patricia Somera
-  == image_tag('patricia-somera.jpg', width: 150, height: 150, itemprop: 'image')
-
-  span itemprop='jobTitle' Enfermeira Particular
-  div(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
-    span itemprop='addressLocality' Brasília
-    |, 
-    span itemprop='addressRegion' DF
-  span itemprop='telephone' (61) 8169-7459
-  == mail_to 'patricia.somera@gmail.com', 'patricia.somera@gmail.com', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email'
-  ==link_to 'http://www.patriciasomera.com.br', 'http://www.patriciasomera.com.br', itemprop: 'url'
