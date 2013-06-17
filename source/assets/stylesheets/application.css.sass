@@ -47,9 +47,10 @@ a
 
 #header-page
   background-color: $green
+  box-shadow: inset 0 -1px 0 darken($green, 15%)
   padding: em(60) 0
   hgroup
-    @include retina-image("/images/logo", 47px 60px)
+    @include retina-image("/assets/images/logo", 47px 60px)
     background-repeat: no-repeat
     padding-left: 60px
   h1, h2
@@ -58,14 +59,10 @@ a
     margin: 0
     padding: 0
   h2
-    font-weight: $semibold
+    font-weight: $regular
   a
     h1, h2
-      color: rgba(white,.9)
-    &:hover
-      text-decoration: none
-      h1, h2
-        color: white
+      color: white
 
 
 .nav-page
@@ -75,26 +72,26 @@ a
     padding: 0
     list-style-type: none
     float: right
-    font-weight: $regular
-    font-size: 25px
-    line-height: 25px
+    font-weight: $light
+    font-size: 30px
+    line-height: 30px
     a
       color: rgba(white, .7)
       &:hover
         color: white
     li
       display: inline-block
-      padding: em(14)
+      padding: em(12)
 
 .logo-page
   +span-columns(6 of 12)
 
 .intro
-  padding: 30px 0
+  padding: 60px 0
   background-color: #f7f7f7
-  font-weight: $regular
-  font-size: 16px
-  color: #777
+  font-weight: $light
+  font-size: 18px
+  color: #333
   text-shadow: 0 1px 0 rgba(white,.4)
   .photo
     +span-columns(3 of 12)
@@ -102,7 +99,7 @@ a
     img
       border-radius: 999em
   .description
-    +span-columns(8 of 12)
+    +span-columns(7 of 12)
     p:first-of-type
       margin-top: 0
     p:last-of-type
@@ -131,7 +128,13 @@ a
 
 .service
   +clearfix
-  padding: 30px 0
+  padding: 40px 0
+
+  .image
+    +span-columns(3 of 12)
+  .description
+    +span-columns(9 of 12)
+    +omega
 
   h2
     font-weight: $light
@@ -140,7 +143,8 @@ a
     margin: 0
     padding: 0 0 .5em 0
     text-shadow: 0 1px 0 rgba(white, .8)
-
+  b
+    font-weight: $semibold
   ul
     color: rgba(black, .8)
     text-shadow: 0 1px 0 rgba(white, .8)
@@ -158,24 +162,37 @@ a
     box-shadow: inset 0 1px 0 darken(#fae8eb, 15%)
     h2
       color: darken($pink, 40%)
+
   &.realizacao-curativos
     background-color: #fbf6e6
     box-shadow: inset 0 1px 0 darken(#fbf6e6, 15%)
+    +row("block", "RTL")
     h2
       color: darken($yellow, 40%)
+    .image
+      +span-columns(3 of 12)
+      +omega
+      text-align: right
+    .description
+      +span-columns(9 of 12)
+      +pad(0 20px 0 0)
+
   &.acompanhamento-pos-operatorio
     background-color: #e0f0f5
     box-shadow: inset 0 1px 0 darken(#e0f0f5, 15%)
     h2
       color: darken($blue, 40%)
+
   &.acompanhamento-pos-parto-amamentacao
     background-color: #f0eafa
     box-shadow: inset 0 1px 0 darken(#f0eafa, 15%)
+    +row("block", "RTL")
     h2
       color: darken($purple, 40%)
-
-  .image
-    +span-columns(4 of 12)
-  .description
-    +span-columns(8 of 12)
-    +omega
+    .image
+      +span-columns(3 of 12)
+      +omega
+      text-align: right
+    .description
+      +span-columns(9 of 12)
+      +pad(0 20px 0 0)
