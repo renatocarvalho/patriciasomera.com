@@ -14,39 +14,49 @@ section.intro
       p Escolhi ser Enfermeira porque amo e respeito a vida.
 
 
-#servicos.servicos
-  .container
+#servicos.services
+  header
+    h1 Serviços Oferecidos
 
-    header
-      h1 Serviços Oferecidos
+  .service.atendimento-domicilio
+    .container
+      .image
+        == image_tag('servico-atendimento-domicilio.png', width: 314, height: 314)
+      .description
+        h2 Atendimento à Domicílio
+        ul
+          li Fazer visita de enfermagem ao paciente em sua residência para avaliar suas necessidades de saúde e realizar cuidados para a sua reabilitação.
 
-    .service
-      h2 Atendimento à Domicílio
-      == image_tag('servico-atendimento-domicilio.png', width: 314, height: 314)
-      ul
-        li Fazer visita de enfermagem ao paciente em sua residência para avaliar suas necessidades de saúde e realizar cuidados para a sua reabilitação.
+  .service.realizacao-curativos
+    .container
+      .image
+        == image_tag('servico-realizacao-curativos.png', width: 314, height: 314)
+      .description
+        h2 Realização de Curativos
+        ul
+          li Avaliar as necessidades de curativo em feridas que o paciente apresenta e realizar o procedimento de troca deste com meta na cura.
+          li Feridas cirúrgicas
+          li Feridas limpas ou infectadas
+          li Feridas de pé diabético
 
-    .service
-      h2 Realização de Curativos
-      == image_tag('servico-realizacao-curativos.png', width: 314, height: 314)
-      ul
-        li Avaliar as necessidades de curativo em feridas que o paciente apresenta e realizar o procedimento de troca deste com meta na cura.
-        li Feridas cirúrgicas
-        li Feridas limpas ou infectadas
-        li Feridas de pé diabético
+  .service.acompanhamento-pos-operatorio
+    .container
+      .image
+        == image_tag('servico-acompanhamento-pos-operatorio.png', width: 314, height: 314)
+      .description
+        h2 Orientações e acompanhamento pós-operatório
+        ul
+          li Avaliar e decidir sobre as melhores opções de tratamento no período de pós-operatório que o paciente se apresenta. 
+          li Avaliação da ferida cirúrgica, orientações sobre como proceder em momentos de dor, sobre melhor posicionamento no leito, na cadeira, durante o banho. Orientações como aliviar sintomas que ocorrem neste período. 
 
-    .service
-      h2 Orientações e acompanhamento pós-operatório
-      == image_tag('servico-acompanhamento-pos-operatorio.png', width: 314, height: 314)
-      ul
-        li Avaliar e decidir sobre as melhores opções de tratamento no período de pós-operatório que o paciente se apresenta. 
-        li Avaliação da ferida cirúrgica, orientações sobre como proceder em momentos de dor, sobre melhor posicionamento no leito, na cadeira, durante o banho. Orientações como aliviar sintomas que ocorrem neste período. 
-
-    .service
-      h2 Orientações e acompanhamento pós-parto e amamentação
-      == image_tag('servico-acompanhamento-pos-parto-amamentacao.png', width: 314, height: 314)
-      ul
-        li Avaliar a mulher como um todo no período de pós-parto. Suas necessidades, suas queixas e sintomas que ocorrem neste período. Dar orientações e ajudar no processo de amamentação para que bebê e mãe possam ter a melhor experiência possível.   
+  .service.acompanhamento-pos-parto-amamentacao
+    .container
+      .image
+        == image_tag('servico-acompanhamento-pos-parto-amamentacao.png', width: 314, height: 314)
+      .description
+        h2 Orientações e acompanhamento pós-parto e amamentação
+        ul
+          li Avaliar a mulher como um todo no período de pós-parto. Suas necessidades, suas queixas e sintomas que ocorrem neste período. Dar orientações e ajudar no processo de amamentação para que bebê e mãe possam ter a melhor experiência possível.   
 
 
 #contato.contact
