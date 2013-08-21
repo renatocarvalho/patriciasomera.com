@@ -9,7 +9,7 @@ section.intro
       == image_tag('patricia-somera.jpg', width: 150, height: 150)
     .description
       p Olá! Seja bem-vindo ao meu site.
-      p Meu nome é Patricia Somera, sou Enfermeira e meu propósito profissional é oferecer soluções de saúde ao meu paciente em seu domicílio. 
+      p Meu nome é Patricia Somera, sou Enfermeira e meu propósito profissional é oferecer soluções de saúde ao meu paciente em seu domicílio.
       p Conheça aqui um pouco mais sobre meus serviços, como posso lhe ajudar e sobre minha experiência profissional.
 
 
@@ -29,7 +29,7 @@ section.intro
   .service.realizacao-curativos
     .container
       .image
-        == image_tag('servico-realizacao-curativos.png', width: 250, height: 250)
+        == image_tag('servico-realizacao-curativos.png', width: 250, height: 250, alt: 'Ilustração Serviço de Realização de Curativos')
       .description
         h2 Realização de Curativos
         ul
@@ -69,7 +69,7 @@ section.intro
         span.hidden itemprop='jobTitle' Enfermeira Particular
         div.address(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
           span itemprop='addressLocality' Brasília
-          |, 
+          |,
           span itemprop='addressRegion' DF
         span.phone itemprop='telephone' (61) 8169-7459
         == mail_to 'patricia.somera@gmail.com', 'Enviar email', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email', class: 'email'
