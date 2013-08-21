@@ -1,16 +1,19 @@
 ---
-title: Enfermeira Particular em Brasília/DF - Atendimento em Domicílio
-description: Enfermeira particular Patricia Somera. Atendimento em domicílio, realização de curativos, orientações e acompanhamento pós-operatório, pós-parto e amamentação.
+title: 'Enfermeira Particular em Brasília/DF - Atendimento em Domicílio'
+description: 'Enfermeira Particular Patricia Somera. Atendimento em domicílio, realização de curativos, orientações e acompanhamento pós-operatório, pós-parto e amamentação.'
 ---
 
 section.intro
   .container
     .photo
-      == image_tag('patricia-somera.jpg', width: 150, height: 150)
+      == image_tag 'patricia-somera.jpg', width: 150, height: 150, alt: 'Patrícia Somera Enfermeira Particular em Brasília/DF'
     .description
       p Olá! Seja bem-vindo ao meu site.
       p Meu nome é Patricia Somera, sou Enfermeira e meu propósito profissional é oferecer soluções de saúde ao meu paciente em seu domicílio.
       p Conheça aqui um pouco mais sobre meus serviços, como posso lhe ajudar e sobre minha experiência profissional.
+      p
+        | Se precisar de qualquer informação é só&nbsp;
+        b == mail_to 'patricia.somera@gmail.com', 'entrar em contato', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email', class: 'email'
 
 
 #servicos.services
@@ -20,7 +23,7 @@ section.intro
   .service.atendimento-domicilio
     .container
       .image
-        == image_tag('servico-atendimento-domicilio.png', width: 250, height: 250)
+        == image_tag 'servico-atendimento-domicilio.png', width: 250, height: 250, alt: 'Ilustração Serviço de Atendimento de Enfermagem em domicílio em Brasília'
       .description
         h2 Atendimento de Enfermagem em domicílio
         ul
@@ -29,7 +32,7 @@ section.intro
   .service.realizacao-curativos
     .container
       .image
-        == image_tag('servico-realizacao-curativos.png', width: 250, height: 250, alt: 'Ilustração Serviço de Realização de Curativos')
+        == image_tag 'servico-realizacao-curativos.png', width: 250, height: 250, alt: 'Ilustração Serviço de Realização de Curativos em Brasília'
       .description
         h2 Realização de Curativos
         ul
@@ -39,7 +42,7 @@ section.intro
   .service.acompanhamento-pos-operatorio
     .container
       .image
-        == image_tag('servico-acompanhamento-pos-operatorio.png', width: 250, height: 250)
+        == image_tag 'servico-acompanhamento-pos-operatorio.png', width: 250, height: 250, alt: 'Ilustração Serviço de Orientações e acompanhamento pós-operatório em Brasília'
       .description
         h2 Orientações e acompanhamento pós-operatório
         ul
@@ -50,7 +53,7 @@ section.intro
   .service.acompanhamento-pos-parto-amamentacao
     .container
       .image
-        == image_tag('servico-acompanhamento-pos-parto-amamentacao.png', width: 250, height: 250)
+        == image_tag 'servico-acompanhamento-pos-parto-amamentacao.png', width: 250, height: 250, alt: 'Ilustração Serviço de Orientações e acompanhamento pós-parto e amamentação em Brasília'
       .description
         h2 Orientações e acompanhamento pós-parto e amamentação
         ul
@@ -64,7 +67,7 @@ section.intro
     .contact
       div(itemscope itemtype='http://schema.org/Person')
         span.name itemprop='name' Patricia Somera
-        == image_tag('patricia-somera.jpg', width: 150, height: 150, itemprop: 'image', class: 'hidden')
+        == image_tag 'patricia-somera.jpg', width: 150, height: 150, itemprop: 'image', class: 'hidden'
 
         span.hidden itemprop='jobTitle' Enfermeira Particular
         div.address(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
@@ -72,8 +75,8 @@ section.intro
           |,
           span itemprop='addressRegion' DF
         span.phone itemprop='telephone' (61) 8169-7459
-        == mail_to 'patricia.somera@gmail.com', 'Enviar email', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email', class: 'email'
-        ==link_to 'http://www.patriciasomera.com.br', 'http://www.patriciasomera.com.br', itemprop: 'url', class: 'hidden'
+        == mail_to 'patricia.somera@gmail.com', 'Quero solicitar um serviço', encode: 'hex', subject: 'Contato pelo site', itemprop: 'email', class: 'email'
+        == link_to 'http://www.patriciasomera.com.br', 'http://www.patriciasomera.com.br', itemprop: 'url', class: 'hidden'
 
       / h2 Patricia Somera
       / ul
