@@ -52,6 +52,7 @@ set :sass, style: :compressed
 ###
 # Helpers
 ###
+activate :i18n
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
