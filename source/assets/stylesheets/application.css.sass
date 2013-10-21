@@ -49,20 +49,31 @@ a
   background-color: $green
   box-shadow: inset 0 -1px 0 darken($green, 15%)
   padding: em(60) 0
+
+  +media(max-width 680px)
+    padding: em(10) 0
+
   hgroup
     @include retina-image("/assets/images/logo", 47px 60px)
     background-repeat: no-repeat
     padding-left: 60px
+
   h1, h2
     font-size: em(28)
     line-height: em(18)
     margin: 0
     padding: 0
+
+    +media(max-width 680px)
+      font-size: em(18)
+
   h2
     font-weight: $regular
+
   a
     h1, h2
       color: white
+
     &:hover
       text-decoration: none
       cursor: default
@@ -70,6 +81,7 @@ a
 
 .nav-page
   +span-columns(6 of 12)
+
   ul
     margin: 0
     padding: 0
@@ -78,16 +90,34 @@ a
     font-weight: $light
     font-size: 30px
     line-height: 30px
+
     a
       color: rgba(white, .7)
+
       &:hover
         color: white
+
     li
       display: inline-block
       padding: em(12)
 
+  +media(max-width 680px)
+    +fill-parent
+    text-align: center
+
+    ul
+      margin-top: 20px
+      border-top: 1px solid rgba(#fff, .3)
+      float: none
+      font-size: 18px
+      line-height: 18px
+      font-weight: $semibold
+      text-transform: uppercase
 .logo-page
   +span-columns(6 of 12)
+
+  +media(max-width 680px)
+    +fill-parent
 
 .intro
   padding: 60px 0
@@ -96,20 +126,35 @@ a
   font-size: 18px
   color: #333
   text-shadow: 0 1px 0 rgba(white,.4)
+
   a
     color: #333
+
   .photo
     +span-columns(3 of 12)
     text-align: right
+
     img
       border-radius: 999em
       border: 1px solid rgba(#ddd, .7)
+
+    +media(max-width 680px)
+      +fill-parent
+      text-align: center
+      margin-bottom: 40px
+
+
   .description
     +span-columns(7 of 12)
+
     p:first-of-type
       margin-top: 0
+
     p:last-of-type
       margin-bottom: 0
+
+    +media(max-width 680px)
+      +fill-parent
 
 .welcome
   text-align: center
@@ -127,9 +172,26 @@ a
 
   .image
     +span-columns(3 of 12)
+
+    +media(max-width 680px)
+      +fill-parent
+      text-align: center
+
+      img
+        width: 140px
+        height: 140px
+        margin-bottom: 20px
+
   .description
     +span-columns(9 of 12)
     +omega
+
+    +media(max-width 680px)
+      +fill-parent
+
+      h2
+        font-size: 28px
+        line-height: 30px
 
   h2
     font-weight: $light
@@ -138,10 +200,12 @@ a
     margin: 0
     padding: 0 0 .5em 0
     text-shadow: 0 1px 0 rgba(white, .8)
+
   b
-    font-weight: $semibold
+    font-weight: $light
+
   ul
-    color: rgba(black, .8)
+    color: rgba(black, .9)
     text-shadow: 0 1px 0 rgba(white, .8)
     list-style-type: none
     margin: 0
@@ -149,6 +213,9 @@ a
     font-size: 22px
     line-height: 27px
     font-weight: $light
+    +media(max-width 680px)
+      font-size: 18px
+      line-height: 20px
     li
       margin-bottom: 1em
 
@@ -168,9 +235,17 @@ a
       +span-columns(3 of 12)
       +omega
       text-align: right
+
+      +media(max-width 680px)
+        +fill-parent
+        text-align: center
+
     .description
       +span-columns(9 of 12)
       +pad(0 20px 0 0)
+
+      +media(max-width 680px)
+        +fill-parent
 
   &.acompanhamento-pos-operatorio
     background-color: #e0f0f5
@@ -188,9 +263,17 @@ a
       +span-columns(3 of 12)
       +omega
       text-align: right
+
+      +media(max-width 680px)
+        +fill-parent
+        text-align: center
+
     .description
       +span-columns(9 of 12)
       +pad(0 20px 0 0)
+
+      +media(max-width 680px)
+        +fill-parent
 
 
 #contato
@@ -201,11 +284,19 @@ a
   font-size: 16px
   color: #222
 
+  +media(max-width 680px)
+    padding: 25px 0 50px 0
+
 .contact
   text-align: center
   font-size: 30px
   line-height: 34px
   font-weight: light
+
+  +media(max-width 680px)
+    font-size: 24px
+    line-height: 26px
+
   h1
     color: #333
     font-weight: $light
@@ -214,13 +305,25 @@ a
     margin: 0
     padding: 0 0 .5em 0
     text-shadow: 0 1px 0 rgba(white, .8)
+
+    +media(max-width 680px)
+      font-size: 28px
+      line-height: 30px
+
   b
     font-weight: $semibold
+
   .address, .name
     font-size: 20px
+
+    +media(max-width 680px)
+      font-size: 17px
+      line-height: 19px
+
   .address
     margin: 0 0 1em 0
     font-weight: $light
+
   .phone
     border-radius: 3px
     padding: .4em
@@ -229,8 +332,18 @@ a
     padding: 1em
     font-size: 30px
     margin-right: 1em
+    color: #000
+    text-decoration: none
+
     &:before
       content: 'Telefone: '
+
+    +media(max-width 680px)
+      font-size: 21px
+      line-height: 23px
+      padding: 0
+      margin-bottom: 20px
+
   .email
     border-radius: 3px
     background-color: $green
@@ -242,10 +355,15 @@ a
     font-size: 30px
     border: 2px solid darken($green, 10%)
     text-transform: uppercase
+
     &:hover
       text-decoration: none
       background-color: darken($green, 10%)
       border: 2px solid darken($green, 20%)
+
+    +media(max-width 680px)
+      font-size: 22px
+      line-height: 24px
 
 
 // Invisible Content Just for Screen Reader Users
@@ -264,3 +382,6 @@ footer#footer
   background-color: #f7f7f7
   padding: 0 0 60px 0
   text-align: center
+
+.facebook
+  overflow: hidden
